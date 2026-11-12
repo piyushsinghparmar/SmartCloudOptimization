@@ -1,0 +1,5 @@
+Demand,MinimumCost,Status,Server1Workload,Server2Workload,Server3Workload
+100,270,Optimal,0,40,60
+140,390,Optimal,0,80,60
+180,550,Optimal,40,80,60
+220,710,Optimal,80,80,60
