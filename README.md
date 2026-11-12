@@ -29,10 +29,14 @@ All sample numbers are illustrative educational values, not real cloud-provider 
 1. Extract the project folder.
 2. Open MATLAB and set the Current Folder to `SmartCloudOptimization`.
 3. Run the command-line pipeline:
-   ```matlab
+  ```matlab
    main
+   ```
+   Or launch the interactive GUI dashboard directly:
+   ```matlab
+   run('app/SmartCloudOptimization_App.mlapp')
+   ```
 4. Generated graphs are saved in `graphs/`.
-
 5. CSV results are saved in `results/`.
 
 
@@ -76,6 +80,18 @@ For demand 180, the expected allocation is `[40, 80, 60]` and the minimum cost i
 ## Game theory
 
 Rows correspond to Provider A strategies and columns to Provider B strategies. The sample strategies are Low Price and Premium Price. Each provider has a separate payoff matrix. The example has a pure-strategy Nash equilibrium at (Low Price, Low Price), payoff (40, 40).
+
+
+
+## Generated Charts
+
+| Workload Allocation | Capacity Utilization |
+| :---: | :---: |
+| ![Workload Allocation](graphs/workload_allocation.png) | ![Capacity Utilization](graphs/capacity_utilization.png) |
+
+| Cost vs. Workload Demand | Pricing Payoffs |
+| :---: | :---: |
+| ![Cost vs Demand](graphs/cost_vs_demand.png) | ![Pricing Payoffs](graphs/pricing_payoffs.png) |
 
 
 
